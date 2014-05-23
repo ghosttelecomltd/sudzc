@@ -1247,7 +1247,7 @@
               <xsl:when test="$type = 'negativeInteger'">int</xsl:when>
               <xsl:when test="$type = 'nonPositiveInteger'">int</xsl:when>
               <xsl:when test="$type = 'nonNegativeInteger'">int</xsl:when>
-              <xsl:when test="$type = 'long'">long long</xsl:when>
+              <xsl:when test="$type = 'long'">long</xsl:when>
               <xsl:when test="$type = 'unsignedLong'">unsigned long long</xsl:when>
               <xsl:when test="$type = 'short'">short</xsl:when>
               <xsl:when test="$type = 'unsignedShort'">short</xsl:when>
