@@ -142,16 +142,16 @@
                                   forNamespace:self.serviceNamespace
                                 withParameters:params
                                    withHeaders:self.headers];
-    SoapRequest *request = [SoapRequest create:target
-                                         action:action
-                                        service:self
-                                     soapAction:@"<xsl:value-of select="$action"/>"
-                                       postData:envelope
-                                  deserializeTo:<xsl:value-of select="$deserializeTo"/>];
+    SoapRequest *_request = [SoapRequest create:target
+                                          action:action
+                                         service:self
+                                      soapAction:@"<xsl:value-of select="$action"/>"
+                                        postData:envelope
+                                   deserializeTo:<xsl:value-of select="$deserializeTo"/>];
 
-    [request send];
+    [_request send];
 
-    return request;
+    return _request;
 }
 </xsl:template>
 
